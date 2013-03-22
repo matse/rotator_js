@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>demo</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript">
+      var images = [
+      'images/rotator-header-01.jpg',
+      'images/rotator-header-02.jpg',
+      'images/rotator-header-03.jpg'
+  ];
+  </script>
+  <script type="text/javascript" src="js/rotator.js"></script>
+</head>
+<body>
+  <img src="images/rotator-header-01.jpg" name="start" id="start_image" alt="header image">
+  <script type="text/javascript">
+    var interID;
+    $(function() { interID = setInterval("rotateImage()", 4000); });
+  </script>
+</body>
+</html>
